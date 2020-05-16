@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<packaging>pom</packaging>
 	<modules>
@@ -10,11 +11,11 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.2.6.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.spring.petclinic</groupId>
 	<artifactId>petclinic</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>petclinic</name>
 	<description>Demo project for Spring Boot Petclinic</description>
 
@@ -38,6 +39,5 @@
 			</plugin>
 		</plugins>
 	</build>
-<scm><developerConnection>scm:git:git@github.com:vipulpopli7534/Spring-Petclinic.git</developerConnection>  <tag>petclinic-0.0.1</tag>
-  </scm>
+<scm><developerConnection>scm:git:git@github.com:vipulpopli7534/Spring-Petclinic.git</developerConnection></scm>
 </project>
