@@ -8,7 +8,10 @@ public interface FindService<T> {
 
     Set<T> findAll();
 
-    default Optional<T> findByName(String name){
-        return Optional.empty();
-    }
+    T save(Long id, T object);
+
+    boolean delete(T object);
+
+    boolean deleteById(Long id);
+
 }
