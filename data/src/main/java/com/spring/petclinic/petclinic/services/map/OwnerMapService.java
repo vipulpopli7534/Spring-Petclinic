@@ -5,9 +5,9 @@ import com.spring.petclinic.petclinic.services.OwnerService;
 
 public class OwnerMapService extends AbstractMapService<Owner> implements OwnerService {
     @Override
-    public Owner findByName(String name) throws Exception {
+    public Owner findByName(String name) {
          return super.map.values().stream().filter(owner -> name.equalsIgnoreCase(owner.getFirstName() + owner.getLastName()))
-                 .findFirst().orElseThrow(() -> new Exception("No Owner present with name " + name));
+                 .findFirst().orElseThrow(() -> new RuntimeException("No Owner present with name " + name));
     }
 
 }
